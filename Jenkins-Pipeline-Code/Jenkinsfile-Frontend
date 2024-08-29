@@ -82,7 +82,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/repo-learning/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project.git'
+                git credentialsId: 'GITHUB', url: 'https://github.com/repo-learning/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project.git', branch:'main'
             }
         }
         stage('Update Deployment file') {
